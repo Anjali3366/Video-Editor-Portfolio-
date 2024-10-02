@@ -1,0 +1,40 @@
+.btn .contact-btn {
+    width: 100%;
+    color: white;
+   
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding:  1.3rem 2.9rem;
+    box-shadow: 0px 0px 60px #820870c6;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    transition: ease-in-out 0.2s;
+    
+    
+}
+.btn .contact-btn:hover{
+    color: black;
+    background: linear-gradient(to right, #800080, #e7d7be);
+    
+    transform: scale(1.1);
+    
+}
+
+
+@media (max-width:800px){
+    .btn .contact-btn {
+        
+        width: 95%;
+        font-size: 0.6rem;
+        padding: 10px;
+        background: linear-gradient(to right, #800080, #e7d7be);
+    
+ 
+
+    }
+}

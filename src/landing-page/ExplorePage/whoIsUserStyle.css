@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.whoIsUser{
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    background-color: rgb(12, 11, 11);
+    border-left: 1.5rem solid rgb(128, 25, 149);
+    border-right: 1.5rem solid rgb(128,25,149);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+
+
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+ 
+ 
+
+}
+
+.aboutUser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+
+
+}
+
+.aboutUser h1{
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(128, 25, 149); 
+    font-weight: 500;
+}
+.aboutUser h2{
+    font-size: 4rem;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+.aboutUser p{
+    color:white;
+    text-align: center;
+    font-size: 1.3rem;
+} 
+.userImg{
+    display: flex;
+    width: 30vw;
+    margin-right: 7vmax;
+  
+  
+}
+.userImg img{
+
+    width: 30vw;
+    height: auto;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgb(128, 25, 149) ;
+
+    
+}
+
+@media (max-width:800px) {
+    .whoIsUser{
+        height: auto;
+        border-left: 10px solid rgb(128,25,149);
+        border-right: 10px solid rgb(128,25,149);
+        overflow-x: hidden;
+        justify-content: space-evenly;
+    }
+
+    .aboutUser h1{
+        font-size: 1.5rem;
+    }
+
+    .aboutUser h2{
+        display: none;
+    }
+
+    .aboutUser p{
+        font-size: 0.5rem;
+    }
+
+    .userImg img{
+        width: 37vw;
+    }
+}

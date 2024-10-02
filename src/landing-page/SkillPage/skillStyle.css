@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.skills{
+width: 100%;
+height: 70vh;
+background: linear-gradient(to right, #000000, #b7a5bc9d 40%, #c35cd8 60%, #080008);
+
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+position: relative;
+
+
+}
+
+.skills h1{
+    color: white;
+    text-align: center;
+    font-size: 2.8vmax;
+    font-weight: 500;
+    margin-top: 2rem;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e7d4dd,
+        0 0 40px #c25dc9, 0 0 50px #8f2288, 0 0 60px #ad1e7d, 0 0 70px #96056f;
+    }
+  
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #2b5598, 0 0 40px #d1c8cd,
+        0 0 50px #e631b5, 0 0 60px #e754d6, 0 0 70px #48024e, 0 0 80px #d90cba;
+    }
+  }
+
+.skill-wrapper{
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.388);
+    border-radius: 10px;
+    backdrop-filter: blur(60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding-top: 3rem;
+    /* padding-bottom: 3rem; */
+    /* align-items: center; */
+   
+}
+    
+
+
+@media (max-width: 800px){
+
+  .skills{
+    height: auto;
+  }
+  .skill-wrapper{
+    height: 70vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px){
+.skills{
+  height: 100vh;
+
+}
+
+.skill-wrapper{
+  height: 100vh;
+}
+}

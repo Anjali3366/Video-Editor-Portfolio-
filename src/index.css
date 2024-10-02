@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+/* #root{
+  position:absolute;
+  top:0;
+  left: 0;
+  height: auto;
+  width: 100%;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #b312bf; 
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(81, 10, 83); /* Darker purple on hover */
+}
+
+
+body{
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}

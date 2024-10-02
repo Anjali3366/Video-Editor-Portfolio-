@@ -1,0 +1,165 @@
+@keyframes leftSlide {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+      
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+    background-color: black;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+ 
+  
+  }
+}
+
+
+.aboutPage{
+    /* width: 100%;
+    height: 90vh; */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 11, 11);
+  
+
+}
+
+.aboutPage h1{
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1rem  0 1rem 0;
+}
+
+.wrappers{
+  padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+
+}
+
+.intro-video {
+    width: 70%;
+    height: auto;
+    background-color: rgb(12, 11, 11);
+
+    margin-right: 2.5rem;
+    padding: 1rem; 
+  object-fit: cover;
+
+    animation: 1s ease-out 0s 1 slideIn ;
+    animation-timeline: view();
+    animation-range-start:0px ;
+    animation-range-end: 500px;
+   
+}
+.intro-video video{
+    width: 100%;
+ 
+   
+    border-radius: 15px;
+}
+
+.challengeBox{
+
+    width: 40%;
+    height: 60vh;
+    border-radius: 15px;
+    background: linear-gradient(270deg, rgba(77, 2, 78, 0.336) 0%, rgba(152, 19, 164, 0.87) 60%);
+
+   
+
+    margin-top: 1rem;
+    margin-right:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+
+    animation: 1s ease-out 0s 1 leftSlide;
+    animation-timeline: view();
+    animation-range-start:0px ;
+    animation-range-end: 500px;
+    background-color: black; 
+}
+
+.btn{
+  object-fit: content;
+}
+
+
+
+
+
+
+  @media (max-width:800px) {
+
+    .aboutPage{
+      padding-top: 3rem;
+    }
+    .aboutPage h1{
+font-size: 1.3rem;
+    }
+
+.wrappers{
+  flex-direction: column;
+}
+
+.intro-video{
+  padding: 0;
+  width: 100%;
+  margin: 0 1rem;
+  
+}
+
+.intro-video video{
+  object-fit: fill;
+}
+
+.challengeBox {
+height: fit-content;
+flex-direction: row;
+width: 90%;
+padding: 34px 15px;
+gap: 0;
+background:rgb(12, 11, 11) ;
+justify-content: space-evenly;
+animation-timeline: view();
+animation-range-start:0px ;
+animation-range-end: 300px;
+animation: 1s ease-out 0s 1 leftSlide;
+
+
+}
+
+.challenge-btn{
+  font-size: 0.6rem;
+  width: 34%;
+  padding: 10px;
+  color:black
+}
+  }
+
+
+  
